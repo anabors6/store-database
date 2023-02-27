@@ -1,0 +1,45 @@
+CREATE TABLE store_Inventory (ID INTEGER PRIMARY KEY, Item TEXT, quantity INTEGER);
+Insert into 'store_inventory' values (1,'Mens long sleeve shirt', 43);
+Insert into 'store_inventory' values (2,'Mens short sleeve shirt', 67);
+Insert into 'store_inventory' values (3,'Mens pants', 46);
+Insert into 'store_inventory' values (4,'Mens shorts',46);
+Insert into 'store_inventory' values (5,'Womens long sleeve shirt', 50);
+Insert into 'store_inventory' values (6,'Womens short sleeve shirt',36);
+Insert into 'store_inventory' values (7,'Womens pants',65);
+Insert into 'store_inventory' values (8,'Womens shorts', 56);
+Insert into 'store_inventory' values (9,'Girls long sleeve shirt',34);
+Insert into 'store_inventory' values (10,'Girls short sleeve shirt',38);
+Insert into 'store_inventory' values (11,'Girls pants',64);
+Insert into 'store_inventory' values (12,'Girls shorts',61);
+Insert into 'store_inventory' values (13,'Boys long sleeve shirt',49);
+Insert into 'store_inventory' values (14,'Boys short sleeve shirt',76);
+Insert into 'store_inventory' values (15,'Boys pants',56);
+Insert into 'store_inventory' values (16,'Boys shorts',64);
+
+select * from store_inventory
+order by quantity asc; 
+
+create table store_sales (ID Integer primary key, Item Integer,Percentage integer); 
+select * from store_sales;
+insert into store_sales values(1, 'mens long sleeve shirt', 20);
+insert into store_sales values(2,'mens short sleeve shirt', 30);
+insert into store_sales values(3,'mens pants', 35);
+insert into store_sales values(4, 'mens shorts', 45);
+insert into store_sales values(5,'Womens long sleeve shirt',45);
+insert into store_sales values(6,'Womens short sleeve shirt',25);
+insert into store_sales values(7,'womens pants',65);
+insert into store_sales values(8,'womens shorts',70);
+insert into store_sales values(9,'Girls long sleeve shirt',35);
+insert into store_sales values(10,'Girls short sleeve shirt',85);
+insert into store_sales values(11,'Girls pants',75);
+insert into store_sales values(12,'Girls shorts',65);
+insert into store_sales values(13,'Boys long sleeve shirt',75);
+insert into store_sales values(14,'Boys short sleeve shirt',45);
+insert into store_sales values(15, 'Boys pants',55);
+insert into store_sales values(16,'Boys shorts',80);
+
+select * from store_sales;
+select * 
+from store_sales
+where Percentage > 50
+order by Percentage;
